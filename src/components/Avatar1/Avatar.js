@@ -23,7 +23,7 @@ export default function Avatar() {
       <div>
         <HatChange />
       </div>
-      <Link to="/AfterLogin">
+      <Link to="/AftLogin">
         <img src={NextButton} className="Next" alt="다음" />
       </Link>
     </div>
