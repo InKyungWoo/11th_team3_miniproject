@@ -25,12 +25,7 @@ function Home() {
   return (
     <div className="Background">
       <img src={title} className="title"></img>
-      <img
-        src={cake}
-        className="cake"
-        alt="케이크"
-        onClick={handleCakeClick}
-      />
+      <img src={cake} className="cake"></img>
       <Link to="/Login">
         <img src={login} className="login"></img>
       </Link>
