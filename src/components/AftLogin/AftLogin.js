@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //import { useHistory } from "history";
 import "src/style/AftLogin/AftLogin.css";
 import title from "src/assets/images/ThisIsForYou.png";
-import cake from "src/assets/images/home_cake.png";
+import cake from "src/assets/images/aftlogin/cake.png";
 import partyrule from "src/assets/images/aftlogin/partyrule.png";
 import invite from "src/assets/images/aftlogin/invite.png";
 import gotoParty from "src/assets/images/aftlogin/gotoParty.png";
