@@ -1,8 +1,144 @@
 .Background {
   position: relative;
-  width: 390px;
-  height: 844px;
-  background: #ffb8bc;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
+
+@font-face {
+  font-family: "bitbit";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
+    url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
+
+.countdown {
+  font-size: 30px;
+  font-family: "bitbit";
+  margin-top: 20px;
+  color: #ffffff; /* 흰색 */
+  text-shadow: 2px 2px 4px #000000; /* 텍스트에 그림자 효과 추가 */
+  border-radius: 40px;
+  background-color: #FFE9EA; /* 테두리 박스의 배경색 */
+  padding: 15px;
+}
+
+.table {
+  position: absolute;
+  width: 193.55px;
+  height: 600px;
+  left: calc(50% - 193.55px/2 + 1.77px);
+  top: 193px;
+  z-index: 9999;
+}
+
+.previous{
+  position: absolute;
+  width: 87.01px;
+  height: 40.55px;
+  left: 292px;
+  top: 793px;
+}
+
+.chair-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -400px;
+  margin-top: -80px;
+}
+
+
+.chair {
+  position: absolute;
+}
+
+.chair:nth-child(1) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 172px;
+  top: 160px;
+}
+
+.chair:nth-child(2) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 32px;
+  top: 254px;
+}
+
+.chair:nth-child(3) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 313px;
+  top: 254px;
+}
+
+.chair:nth-child(4) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 32px;
+  top: 349px;
+}
+
+.chair:nth-child(5) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 313px;
+  top: 349px;
+}
+
+.chair:nth-child(6) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 32px;
+  top: 444px;
+}
+
+.chair:nth-child(7) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 313px;
+  top: 444px;
+}
+
+.chair:nth-child(8) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 32px;
+  top: 539px;
+}
+
+.chair:nth-child(9) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 313px;
+  top: 539px;
+}
+
+.chair:nth-child(10) {
+  
+  width: 50px;
+  height: 54.17px;
+  left: 32px;
+  top: 634px;
+}
+
+.chair:nth-child(11) {
+  width: 50px;
+  height: 54.17px;
+  left: 313px;
+  top: 634px;
+}
+
+/* 추가적인 의자들의 위치를 필요한 개수만큼 추가 */
