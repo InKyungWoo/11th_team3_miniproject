@@ -11,6 +11,7 @@ import nothing from "src/assets/images/avatar/clothes/nothing.png";
 
 import RightRed from "src/assets/images/avatar/arrowRight_Red.png";
 import LeftRed from "src/assets/images/avatar/arrowLeft_Red.png";
+import NextButton from "src/assets/images/avatar/nextButton.png";
 
 import "src/style/Avatar/Avatar.css";
 
@@ -40,10 +41,16 @@ const HatChange = () => {
     hoddie,
     pink,
     snowman,
-
     straw,
     nothing,
   ];
+
+  const handleSaveImage = () => {
+    const selectedImage = images[currentIndex];
+    // Save the selectedImage data to localStorage or perform any other desired action
+    console.log(" saved:", selectedImage);
+  };
+
   return (
     <div className="slider">
       <img
@@ -69,6 +76,12 @@ const HatChange = () => {
           src={LeftRed}
           className="HatLeft "
           alt="왼쪽버튼"
+        />
+        <img
+          onClick={handleSaveImage}
+          src={NextButton}
+          className="Next"
+          alt="다음"
         />
       </div>
     </div>
