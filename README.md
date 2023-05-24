@@ -11,7 +11,7 @@ npm install react-router-dom@6
 - Popup창 기능
 
 ```
-npm install react-moda
+npm install react-modal
 ```
 
 - 폭죽 효과
