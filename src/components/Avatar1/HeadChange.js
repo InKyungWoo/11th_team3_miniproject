@@ -10,6 +10,7 @@ import Raccoon from "src/assets/images/avatar/head/raccoon_head.png";
 
 import RightGreen from "src/assets/images/avatar/arrowRight_Green.png";
 import LeftGreen from "src/assets/images/avatar/arrowLeft.png";
+import NextButton from "src/assets/images/avatar/nextButton.png";
 
 import "src/style/Avatar/Avatar.css";
 
@@ -41,6 +42,11 @@ const HeadChange = () => {
     Rabbit,
     Raccoon,
   ];
+  const handleSaveImage = () => {
+    const selectedImage = images[currentIndex];
+    // Save the selectedImage data to localStorage or perform any other desired action
+    console.log("Image saved:", selectedImage);
+  };
 
   return (
     <div className="slider">
@@ -68,6 +74,12 @@ const HeadChange = () => {
           src={LeftGreen}
           className="HeadLeft"
           alt="왼쪽버튼"
+        />
+        <img
+          onClick={handleSaveImage}
+          src={NextButton}
+          className="Next"
+          alt="다음"
         />
       </div>
     </div>
