@@ -1,0 +1,217 @@
+@import url("https://noonnu.cc/font_page/393");
+
+@font-face {
+  font-family: "PFStardust";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bitbit";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
+    url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
+
+.background {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  background: #ffb8bc;
+  margin: 0;
+  padding: 0;
+}
+
+.Jointitle {
+  position: absolute;
+  width: 155px;
+  height: 49px;
+  left: calc(50% - 155px / 2 + 0.5px);
+  top: 101px;
+
+  font-family: "DNF Bit Bit TTF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #ffffff;
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding: 0;
+}
+
+.ID {
+  position: absolute;
+  width: 35px;
+  height: 32px;
+  left: 49px;
+  top: 239px;
+
+  font-family: "bitbit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+  text-shadow: 1.3px solid #15321c;
+  margin: 0;
+  padding: 0;
+}
+
+.Loginbox {
+  position: absolute;
+  width: 290px;
+  height: 36px;
+  left: 49px;
+  top: 282px;
+  background: #ffe9ea;
+  border-radius: 40px;
+
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 55px;
+  color: #000000;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.PW {
+  position: absolute;
+  width: 35px;
+  height: 32px;
+  left: 49px;
+  top: 348px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.PwBox {
+  position: absolute;
+  width: 290px;
+  height: 36px;
+  left: 49px;
+  top: 390px;
+
+  background: #ffe9ea;
+  border-radius: 40px;
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 55px;
+  color: #000000;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.PwCheck {
+  position: absolute;
+  width: 290px;
+  height: 36px;
+  left: 49px;
+  top: 460px;
+
+  background: #ffe9ea;
+  border-radius: 40px;
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 55px;
+  color: #000000;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.FinishedJoin {
+  position: absolute;
+  width: 136px;
+  left: calc(50% - 136px / 2 + 18px);
+  top: 63%;
+  bottom: 31.04%;
+
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 55px;
+
+  color: #000000;
+}
+
+.CreateJoin {
+  position: absolute;
+  width: 240px;
+  left: calc(50% - 240px / 2 + 1px);
+  top: 72.27%;
+  bottom: 21.26%;
+}
+
+.GotoLogin {
+  position: absolute;
+  width: 240px;
+  height: 54.55px;
+  left: calc(50% - 240px / 2);
+  top: 714px;
+}
+
+.errorID {
+  position: absolute;
+  width: 156px;
+  height: 42px;
+  left: calc(50% - 156px / 2 - 25px);
+  top: 239px;
+
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #b45f66;
+}
+
+.errorPW {
+  position: absolute;
+  width: 252px;
+  height: 42px;
+  left: 95px;
+  top: 349px;
+
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #b45f66;
+}
+
+.errorCheckPW {
+  position: absolute;
+  width: 167px;
+  height: 42px;
+  left: 95px;
+  top: 420px;
+
+  font-family: "PFStardust";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #b45f66;
+}

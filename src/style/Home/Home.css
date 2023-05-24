@@ -1,0 +1,33 @@
+.Background {
+  position: relative;
+  width: 390px;
+  height: 844px;
+
+  background: #ffb8bc;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  position: absolute;
+  width: 321px;
+  height: 49px;
+  left: 34.5px;
+  top: 101px;
+}
+
+.cake {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: calc(50% - 350px / 2);
+  top: calc(50% - 350px / 2 + 20px);
+}
+
+.login {
+  position: absolute;
+  width: 240px;
+  height: 54.55px;
+  left: 75px;
+  top: 679px;
+}
