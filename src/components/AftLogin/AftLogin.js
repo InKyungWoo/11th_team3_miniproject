@@ -13,6 +13,7 @@ import letter from "src/assets/images/aftlogin/longletter.png";
 import close from "src/assets/images/aftlogin/confirm.png";
 
 import Modal from "react-modal";
+import confetti from "canvas-confetti";
 
 Modal.setAppElement("#root"); // Set the root element for the modal
 
@@ -42,10 +43,29 @@ function AftLogin() {
     setShowPopup(false);
   };
 
+  const handleCakeClick = () => {
+    // Generate confetti
+    confetti({
+      angle: randomInRange(55, 125),
+      spread: randomInRange(50, 70),
+      particleCount: randomInRange(50, 100),
+      origin: { y: 0.6 }
+    });
+  };
+
+  const randomInRange = (min, max) => {
+    return Math.random() * (max - min) + min;
+  };
+
   return (
     <div className="Background">
       <img src={title} className="title" alt="타이틀" />
-      <img src={cake} className="cake" alt="케이크" />
+      <img
+        src={cake}
+        className="cake"
+        alt="케이크"
+        onClick={handleCakeClick}
+      />
       <div className="pinkRectangle">
         <div className="linkContainer">
         <img
