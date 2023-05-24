@@ -31,14 +31,12 @@
   z-index: 1;
 }
 
-.cake {
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
+.cake2 {
   position: absolute;
-  left: 21px;
-  top: 30px;
-  z-index: 0;
+  width: 350px;
+  height: 350px;
+  left: 12px;
+  top: 127px;
 }
 
 .title {

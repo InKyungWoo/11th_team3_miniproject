@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //import { useHistory } from "history";
 import "src/style/AftLogin/AftLogin.css";
 import title from "src/assets/images/ThisIsForYou.png";
-import cake from "src/assets/images/aftlogin/cake.png";
+import cake2 from "src/assets/images/aftlogin/cake.png";
 import partyrule from "src/assets/images/aftlogin/partyrule.png";
 import invite from "src/assets/images/aftlogin/invite.png";
 import gotoParty from "src/assets/images/aftlogin/gotoParty.png";
@@ -61,8 +61,8 @@ function AftLogin() {
     <div className="Background">
       <img src={title} className="title" alt="타이틀" />
       <img
-        src={cake}
-        className="cake"
+        src={cake2}
+        className="cake2"
         alt="케이크"
         onClick={handleCakeClick}
       />
