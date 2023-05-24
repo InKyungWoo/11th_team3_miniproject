@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import NextButton from "src/assets/images/avatar/nextButton.png";
+import arrowLeft from "src/assets/images/avatar/arrowLeft.png";
 import "src/style/Avatar/Avatar.css";
 import HeadChange from "src/components/Avatar1/HeadChange";
 import BodyChange from "./BodyChange";
@@ -7,7 +8,30 @@ import ClothesChange from "./ClothesChange";
 import HatChange from "./HatChange";
 import { Link } from "react-router-dom";
 
-export default function Avatar() {
+const Avatar = () => {
+  const canvasRef = useRef(null);
+
+  const handleNext = () => {
+    const canvas = canvasRef.current;
+    const image = canvas.toDataURL("image/png");
+
+    // 사용자 입력으로 파일 이름 받기
+    const imageName = prompt("이미지의 이름을 입력하세요:");
+
+    // 이미지 저장 로직
+    saveImageToLocalStorage(image, imageName);
+  };
+
+  const saveImageToLocalStorage = (imageData, imageName) => {
+    // 이미지를 localStorage에 저장하는 로직 또는 다른 작업을 수행할 수 있습니다.
+    // 예시: localStorage.setItem(imageName, imageData);
+    console.log("저장된 이미지:", imageName);
+  };
+
+  const handlePrevious = () => {
+    // 이전 버튼을 클릭했을 때 수행할 작업을 구현하세요.
+  };
+
   return (
     <div className="Background">
       <div className="AvatarCheck"></div>
@@ -23,9 +47,27 @@ export default function Avatar() {
       <div>
         <HatChange />
       </div>
-      <Link to="/AftLogin">
-        <img src={NextButton} className="Next" alt="다음" />
-      </Link>
+      {/* Canvas 요소 */}
+      <canvas ref={canvasRef} className="Canvas" width={200} height={200} />
+      <div>
+        {/* 이전 버튼과 다음 버튼 */}
+        <img
+          onClick={handlePrevious}
+          src={arrowLeft}
+          className="HatLeft"
+          alt="왼쪽버튼"
+        />
+        <Link to="/AftLogin">
+          <img
+            onClick={handleNext}
+            src={NextButton}
+            className="Next"
+            alt="다음"
+          />
+        </Link>
+      </div>
     </div>
   );
-}
+};
+
+export default Avatar;
