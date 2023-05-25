@@ -57,7 +57,7 @@ const Avatar = () => {
           className="HatLeft"
           alt="왼쪽버튼"
         />
-        <Link to="/GuestHome">
+        <Link to="/AftLogin">
           <img
             onClick={handleNext}
             src={NextButton}
