@@ -9,7 +9,7 @@ import partyrule from "src/assets/images/aftlogin/partyrule.png";
 import invite from "src/assets/images/aftlogin/invite.png";
 import gotoParty from "src/assets/images/aftlogin/gotoParty.png";
 import logout from "src/assets/images/aftlogin/logout.png";
-import letter from "src/assets/images/aftlogin/longletter.png";
+import letter from "src/assets/images/aftlogin/letter.png";
 import close from "src/assets/images/aftlogin/confirm.png";
 
 import Modal from "react-modal";

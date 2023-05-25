@@ -14,8 +14,9 @@
 
 import React from 'react';
 import ButtonPinkImage from 'src/assets/images/guestletterdone_button_pink.png';
-import EnvelopeImage from 'src/assets/images/guestletterdone_envelope.png';
+import EnvelopeImage from 'src/assets/images/guestenvelope.png';
 import { styled } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 
 const GuestLetterDone1 = styled('div')({
   backgroundColor: `rgba(255, 184, 188, 1)`,
@@ -116,10 +117,12 @@ function GuestLetterDone(props) {
   return (
     <GuestLetterDone1 className={props.className}>
       <Rectangle10></Rectangle10>
-      <Group5>
-        <ButtonPink src={ButtonPinkImage} loading="lazy" alt={'button_pink'} />
-        <Q>{`파티장 가기`}</Q>
-      </Group5>
+      <Link to="/GuestPartyroom">
+        <Group5>
+          <ButtonPink src={ButtonPinkImage} loading="lazy" alt={'button_pink'} />
+          <Q>{`파티장 가기`}</Q>
+        </Group5>
+      </Link>
       <Q1>
         {`케이크 한 층과 함께
 편지가 안전하게 전달되었습니다.`}

@@ -28,6 +28,7 @@ import Chair11Image from 'src/assets/images/guestpartyroom_chair_10.png';
 import Q3Image from 'src/assets/images/guestpartyroom_____.png';
 import TableImage from 'src/assets/images/table.png';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 const GuestPartyroom1 = styled('div')({
   backgroundColor: `rgba(255, 184, 188, 1)`,
@@ -240,10 +241,12 @@ const Table = styled('img')({
 function GuestPartyroom(props) {
   return (
     <GuestPartyroom1 className={props.className}>
-      <Q>
-        <Shortpink src={ShortpinkImage} loading="lazy" alt={'shortpink'} />
-        <Q1>{`종료`}</Q1>
-      </Q>
+      <Link to="/Home">
+        <Q>
+          <Shortpink src={ShortpinkImage} loading="lazy" alt={'shortpink'} />
+          <Q1>{`종료`}</Q1>
+        </Q>
+      </Link>
       <Q2>{`현재 파티장 모습`}</Q2>
       <Chair>
         <Chair1 src={Chair1Image} loading="lazy" alt={'chair'} />

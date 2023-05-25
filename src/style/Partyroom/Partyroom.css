@@ -29,7 +29,7 @@
   height: 600px;
   left: calc(50% - 193.55px/2 + 1.77px);
   top: 193px;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .previous{
@@ -142,3 +142,81 @@
 }
 
 /* 추가적인 의자들의 위치를 필요한 개수만큼 추가 */
+
+.cakestack1{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 160px;
+  top: 200px;
+  z-index: 9999;
+}
+.cakestack2{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 160px;
+  top: 225px;
+  z-index: 9998;
+}
+.cakestack3{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 160px;
+  top: 250px;
+  z-index: 9997;
+}
+.cakestack4{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 160px;
+  top: 275px;
+  z-index: 9996;
+}
+
+.maincharacter {
+  position: absolute;
+  width: 120px;
+  height: 125.9px;
+  left: 130px;
+  top: 97px;
+  z-index: 2;
+}
+
+.guest1{
+  position: absolute;
+  width: 130px;
+  height: 124.14px;
+  left: -8px;
+  top: 196px;
+  z-index: 2;
+}
+
+.guest2{
+  position: absolute;
+  width: 121px;
+  height: 146.96px;
+  left: 270px;
+  top: 185px;
+  z-index: 2;
+}
+
+.guest3 {
+  position: absolute;
+  width: 139px;
+  height: 147px;
+  left: -20px;
+  top: 280px;
+  z-index: 2;
+}
+
+.guest4 {
+  position: absolute;
+  width: 145px;
+  height: 152px;
+  left: 250px;
+  top: 273px;
+  z-index: 2;
+}
