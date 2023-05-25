@@ -17,6 +17,7 @@ import LongletterImage from 'src/assets/images/guestletter_longletter.png';
 import ButtonPinkImage from 'src/assets/images/guestletter_button_pink.png';
 import Q11Image from 'src/assets/images/guestletter___________1.png';
 import { styled } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 
 const GuestLetter1 = styled('div')({
   backgroundColor: `rgba(255, 184, 188, 1)`,
@@ -234,10 +235,12 @@ function GuestLetter(props) {
       <Group10>
         <Q2>{`닉네임`}</Q2>
       </Group10>
-      <Q3>
-        <ButtonPink src={ButtonPinkImage} loading="lazy" alt={'button_pink'} />
-        <Q4>{`편지 보내기`}</Q4>
-      </Q3>
+      <Link to="/GuestLetterDone">
+        <Q3>
+          <ButtonPink src={ButtonPinkImage} loading="lazy" alt={'button_pink'} />
+          <Q4>{`편지 보내기`}</Q4>
+        </Q3>
+      </Link>
       <Q11 src={Q11Image} loading="lazy" alt={'새싹냥 1'} />
       <Rectangle11></Rectangle11>
       <Q47Hgxwch1930>
