@@ -24,7 +24,7 @@ const Avatar = () => {
 
   const saveImageToLocalStorage = (imageData, imageName) => {
     // 이미지를 localStorage에 저장하는 로직 또는 다른 작업을 수행할 수 있습니다.
-    // 예시: localStorage.setItem(imageName, imageData);
+    localStorage.setItem(imageName, imageData);
     console.log("저장된 이미지:", imageName);
   };
 
@@ -57,7 +57,7 @@ const Avatar = () => {
           className="HatLeft"
           alt="왼쪽버튼"
         />
-        <Link to="/AftLogin">
+        <Link to="/GuestHome">
           <img
             onClick={handleNext}
             src={NextButton}
