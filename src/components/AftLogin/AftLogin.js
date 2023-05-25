@@ -14,24 +14,11 @@ import close from "src/assets/images/aftlogin/confirm.png";
 
 import Modal from "react-modal";
 import confetti from "canvas-confetti";
+//import { Login } from "src/components/Login/login.js";
 
 Modal.setAppElement("#root"); // Set the root element for the modal
 
 function AftLogin() {
-
-/*  
-  //const history = useHistory();
-
-  const handleLogout = () => {
-    // 로그아웃 처리 로직을 구현하세요
-    // 예: user.logout();
-    // 예: history.push('/');
-    console.log("로그아웃 되었습니다.");
-
-    // 로그아웃 후 Home으로 이동
-    history.push("/Home");
-  };
-*/ 
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -57,6 +44,11 @@ function AftLogin() {
     return Math.random() * (max - min) + min;
   };
 
+  const onClickLogoutButton = () => {
+    // 로그아웃 동작 구현
+    alert("로그아웃되었습니다.");
+  };
+
   return (
     <div className="Background">
       <img src={title} className="title" alt="타이틀" />
@@ -80,12 +72,16 @@ function AftLogin() {
           <Link to="/Partyroom">
             <img src={gotoParty} className="gotoParty" alt="파티방 입장" />
           </Link>
-          <img
-            src={logout}
-            className="logout"
-            //onClick={handleLogout}
-            alt="로그아웃"
-          />
+
+          <Link to="/Home">
+            <img
+              src={logout}
+              alt="로그아웃"
+              onClick={onClickLogoutButton}   
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
+
         </div>
       </div>
       {showPopup && (
