@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import NextButton from "src/assets/images/avatar/nextButton.png";
-import arrowLeft from "src/assets/images/avatar/arrowLeft.png";
 import "src/style/Avatar/Avatar.css";
 import HeadChange from "src/components/Avatar1/HeadChange";
 import BodyChange from "./BodyChange";
@@ -49,14 +48,7 @@ const Avatar = () => {
       </div>
       {/* Canvas 요소 */}
       <canvas ref={canvasRef} className="Canvas" width={200} height={200} />
-      <div>
-        {/* 이전 버튼과 다음 버튼 */}
-        <img
-          onClick={handlePrevious}
-          src={arrowLeft}
-          className="HatLeft"
-          alt="왼쪽버튼"
-        />
+      <div>       
         <Link to="/AftLogin">
           <img
             onClick={handleNext}

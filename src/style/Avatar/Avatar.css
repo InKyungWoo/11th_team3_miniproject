@@ -36,7 +36,7 @@
   width: 64px;
   height: 69.82px;
   left: 310px;
-  top: calc(50% - 71px / 2 - 66.5px);
+  top: 320px;;
   padding: 0;
   margin: 0;
 }
@@ -46,7 +46,7 @@
   width: 64px;
   height: 69.82px;
   left: 20px;
-  top: calc(50% - 71px / 2 - 66.5px);
+  top: 320px;;
   padding: 0;
   margin: 0;
 }
@@ -56,7 +56,7 @@
   width: 191px;
   height: 71px;
   left: calc(50% - 191px / 2 + 0.5px);
-  top: calc(50% - 71px / 2 - 66.5px);
+  top: 320px;;
 
   background: #ffe9ea;
   border-radius: 40px;
@@ -108,7 +108,7 @@
   width: 191px;
   height: 71px;
   left: calc(50% - 191px / 2 + 0.5px);
-  top: calc(50% - 71px / 2 + 165.5px);
+  top: 552px;
 
   background: #ffe9ea;
   border-radius: 40px;
@@ -119,7 +119,7 @@
   width: 100px;
   height: 100px;
   left: 145px;
-  top: 525px;
+  top: 535px;
   margin: 0px;
   padding: 0px;
 }
@@ -129,7 +129,7 @@
   width: 64px;
   height: 69.82px;
   left: 310px;
-  top: calc(50% - 71px / 2 + 165.5px);
+  top: 552px;
 }
 
 .ClothesLeft {
@@ -137,7 +137,7 @@
   width: 64px;
   height: 69.82px;
   left: 20px;
-  top: calc(50% - 71px / 2 + 165.5px);
+  top: 552px;
 }
 
 .PickHat {
@@ -145,7 +145,7 @@
   width: 191px;
   height: 71px;
   left: calc(50% - 191px / 2 + 0.5px);
-  top: calc(50% - 71px / 2 + 281.5px);
+  top: 668px;
 
   background: #ffe9ea;
   border-radius: 40px;
@@ -156,7 +156,7 @@
   width: 64px;
   height: 69.82px;
   left: 310px;
-  top: calc(50% - 71px / 2 + 281.5px);
+  top: 668px;
 }
 
 .HatLeft {
@@ -164,7 +164,7 @@
   width: 64px;
   height: 69.82px;
   left: 20px;
-  top: calc(50% - 71px / 2 + 281.5px);
+  top: 668px;
 }
 
 .Hat {

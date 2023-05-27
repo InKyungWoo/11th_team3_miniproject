@@ -1,8 +1,8 @@
 # This is For You 🍰
 
-한국외국어대학교 멋쟁이사자처럼 🦁 11기 3팀 - 2TF의 miniproject
+`한국외국어대학교 멋쟁이사자처럼 11기 🦁` - 3팀 `2TF`의 miniproject 입니다 :)
 
-<img src="src/assets/images/tify_thumbnail.jpg">
+<img src="src/assets/images/tify_thumbnail.jpg" width="630px">
 
 ## Team members:
 귀염 뽀짝한 3팀 멤버들을 소개합니다 ⸜(♡'ᗜ'♡)⸝
@@ -19,7 +19,7 @@
     <br />
     <sub>
     <b>JaeWoo Kim</b><br>
-    <b>Mentor / Front-End</b>
+    <b>🌟 Mentor / Front-End</b>
     </sub>
     </a>
     <br />
@@ -29,8 +29,8 @@
     <img src="https://avatars.githubusercontent.com/u/129376888?v=4" width="150px;" alt="정주"/>
     <br />
     <sub>
-    <b>JungJu Kim</b><br>
-    <b>Front-end</b>
+    <b>JeongJoo Kim</b><br>
+    <b>💟 Front-end</b>
     </sub>
     </a>
     <br />
@@ -39,8 +39,8 @@
     <img src="https://avatars.githubusercontent.com/u/118599217?v=4" width="150px;" alt="수현"/>
     <br />
     <sub>
-    <b>SooHyeon Moon</b><br>
-    <b>Back-End</b>
+    <b>SuHyun Moon</b><br>
+    <b>🍬 Back-End</b>
     </sub>
     </a>
     <br />
@@ -51,7 +51,7 @@
     <br />
     <sub>
     <b>Inkyung Woo</b><br>
-    <b>Front-End / Design</b>
+    <b>🎨 Design / Front-End</b>
     </sub>
     </a>
     <br />

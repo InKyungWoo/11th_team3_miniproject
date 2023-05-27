@@ -41,7 +41,8 @@
   width: 350px;
   height: 71px;
   left: calc(50% - 350px / 2);
-  top: 436px;
+  top: 552px;
+  
 }
 
 .pickClothes {
@@ -49,7 +50,7 @@
   width: 350px;
   height: 71px;
   left: calc(50% - 350px / 2);
-  top: 552px;
+  top: 436px;
 }
 
 .pickHat {
