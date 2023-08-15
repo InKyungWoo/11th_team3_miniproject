@@ -19,7 +19,7 @@ function Partyroom() {
 
   useEffect(() => {
     // D-day 계산 로직
-    const targetDate = new Date("2023-06-21");
+    const targetDate = new Date("2023-08-17"); //나중에 사용자 정보로 받아오기
     const today = new Date();
     const timeDifference = targetDate - today;
     const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
