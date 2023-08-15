@@ -1,3 +1,4 @@
+/* 백그라운드 */
 .Background {
   position: relative;
   width: 390px;
@@ -8,6 +9,7 @@
   padding: 0;
 }
 
+/* 선택한 아바타 전체 스냅샷 */
 .AvatarCheck {
   position: absolute;
   width: 250px;
@@ -15,65 +17,150 @@
   left: calc(50% - 250px / 2);
   top: 29px;
 
+  /* background: #ffe9ea;
+  border-radius: 40px; */
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 스냅샷 백그라운드 */
+.AvatarBackground{
   background: #ffe9ea;
   border-radius: 40px;
   margin: 0;
   padding: 0;
+
+  width: 250px;
+  height: 250px;
 }
 
-.Head {
+
+
+/*===================== 1. HeadChange =====================*/
+
+/* 1-1.스냅샷 머리 */
+.SeeHead {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 45px;
-  top: 10px;
-  padding: 0;
-  margin: 0;
+  width: 200px;
+  height: 200px;
+  left: 100px;
+  top: 64px;
+
+  left: 0px;
+  top: 0px;
+
+  left: calc(50% - 250px / 2);
+  top: 29px;
+
+  left: 25px;
+  top: 35px;
+
+  /* left: 100px; */
+
 }
 
-.HeadRight {
-  position: absolute;
-  width: 64px;
-  height: 69.82px;
-  left: 310px;
-  top: 320px;;
-  padding: 0;
-  margin: 0;
+/* 1-2. 선택창 div */
+.DivPickHead{
+  width: 350px;
+  height: 71px;
+
+  flex-shrink: 0;
+
 }
 
-.HeadLeft {
-  position: absolute;
-  width: 64px;
-  height: 69.82px;
-  left: 20px;
-  top: 320px;;
-  padding: 0;
-  margin: 0;
-}
-
+/* 1-2-1. 선택창 div 안 백그라운드 */
 .PickHead {
   position: absolute;
   width: 191px;
   height: 71px;
   left: calc(50% - 191px / 2 + 0.5px);
-  top: 320px;;
+  top: 320px;
 
   background: #ffe9ea;
   border-radius: 40px;
   padding: 0;
   margin: 0;
+
 }
 
-.Body {
+
+/*1-2-2. 선택창)머리 */
+.Head {
   position: absolute;
   width: 100px;
   height: 100px;
-  left: 145px;
-  top: 410px;
-  margin: 0px;
-  padding: 0px;
+
+  left: 45px;
+  top: 10px;
+
+  padding: 0;
+  margin: 0;
 }
 
+/*1-2-3. 화살표 - 오른쪽 */
+.HeadRight {
+  position: absolute;
+  width: 64px;
+  height: 69.82px;
+  left: 306px;
+  top: 321px;
+  padding: 0;
+  margin: 0;
+
+  /* position: relative; */
+  /* left: 222px;
+  top: 0; */
+
+  left: 206px;
+  top: 0px;
+
+}
+
+/*1-2-4. 화살표 - 왼쪽 */
+.HeadLeft {
+  position: absolute;
+  width: 64px;
+  height: 69.82px;
+  left: 20px;
+  top: 321px;
+  padding: 0;
+  margin: 0;
+
+  /* position: relative; */
+  left: 0px;
+  /* top: 0px;
+
+  left: -16px; */
+  left: -80px;
+  top: 0px;
+}
+
+/* ========================2.BodyChange ==================*/
+
+/* 2-1.스냅샷 몸통 */
+.SeeBody {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 100px;
+  top: 64px;
+
+  left: 25px;
+  top: 35px;
+}
+
+/* 2-2. 선택창 div */
+.DivPickBody{
+  width: 350px;
+  height: 71px;
+
+  flex-shrink: 0;
+
+  top: 437px;
+
+}
+
+/* 2-2-1. 선택창 div 안 백그라운드 */
 .PickBody {
   position: absolute;
   width: 191px;
@@ -85,24 +172,96 @@
   border-radius: 40px;
   margin: 0px;
   padding: 0px;
+
+  left: calc(50% - 191px / 2 + 0.5px);
 }
 
+/*2-2-2. 선택창)몸통 */
+.Body {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+
+  width: 75px;
+  height: 75px;
+
+  left: 57.5px;
+  top: 0px;
+}
+
+/* 2-2-3. 화살표 - 오른쪽 */
 .BodyRight {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 310px;
   top: 436px;
+
+  top: 0px;
+  left: 206px;
+
+  position: absolute;
+  width: 64px;
+  height: 69.82px;
+  left: 306px;
+  top: 321px;
+  padding: 0;
+  margin: 0;
+
+  /* position: relative; */
+  /* left: 222px;
+  top: 0; */
+
+  left: 206px;
+  top: 0px;
+
+  top: 10px;
+
+  left: 206px;
+  top: 0px;
 }
 
+/* 2-2-4.화살표 - 왼쪽 */
 .BodyLeft {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 20px;
   top: 437px;
+
+  /* top:0px; */
+  left: -80px;
+
+  left: 20px;
+
+  left: -80px;
+  top: 0px;
+  
 }
 
+/*=================== 3. ClothesChange ===============*/
+
+/* 3-1.스냅샷 몸통 */
+.SeeClothes{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 100px;
+  top: 64px;
+
+  left: 25px;
+  top: 35px;
+}
+
+/* 3-2. 선택창 div */
+.DivPickClothes{
+  width: 350px;
+  height: 71px;
+
+  flex-shrink: 0;
+}
+
+/* 3-2-1. 선택창 div 안 백그라운드 */
 .PickClothes {
   position: absolute;
   width: 191px;
@@ -112,34 +271,74 @@
 
   background: #ffe9ea;
   border-radius: 40px;
+
+
 }
 
+/*3-2-2. 선택창)몸통 */
 .Clothes {
   position: absolute;
   width: 100px;
   height: 100px;
-  left: 145px;
-  top: 535px;
-  margin: 0px;
-  padding: 0px;
+  
+  padding: 0;
+  margin: 0;
+
+  top: -15px;
+  left: 45px;
 }
 
+/* 3-2-3. 화살표 - 오른쪽 */
 .ClothesRight {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 310px;
   top: 552px;
+
+  top: 0px;
+  left: 206px;
+
+  left: 206px;
+  top: 0px;
 }
 
+/* 3-2-4.화살표 - 왼쪽 */
 .ClothesLeft {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 20px;
   top: 552px;
+
+  top: 0px;
+  left: -80px;
 }
 
+/*=============== 4. HatChange =============*/
+
+/* 4-1.스냅샷 몸통 */
+
+.SeeHat {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 100px;
+  top: 70px;
+
+  left: 25px;
+  top: 35px;
+}
+
+/* 4-2. 선택창 div */
+.DivPickHat{
+  width: 350px;
+  height: 71px;
+
+  flex-shrink: 0;
+}
+
+/* 4-2-1. 선택창 div 안 백그라운드 */
 .PickHat {
   position: absolute;
   width: 191px;
@@ -151,31 +350,47 @@
   border-radius: 40px;
 }
 
+/*4-2-2. 선택창)몸통 */
+.Hat {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+
+  width: 150px;
+  height: 150px;
+  left: 17.5px;
+  top: 17.5px;
+
+  width: 100px;
+  height: 100px;
+  left: 45px;
+  top: 15px;
+}
+
+/* 4-2-3. 화살표 - 오른쪽 */
 .HatRight {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 310px;
   top: 668px;
+
+  top: 0px;
+  left: 206px;
 }
 
+/* 4-2-4. 화살표 - 오른쪽 */
 .HatLeft {
   position: absolute;
   width: 64px;
   height: 69.82px;
   left: 20px;
   top: 668px;
-}
 
-.Hat {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 145px;
-  top: 680px;
-  margin: 0px;
-  padding: 0px;
+  top: 0px;
+  left: -80px;
 }
+/* ========NextButton========== */
 
 .Next {
   position: absolute;
@@ -183,26 +398,133 @@
   height: 54.55px;
   left: 250px;
   top: 773px;
+
+  left: 700px;
+  top: 800px;
+
+  left: 65%;
+ 
+  top: 790px;
 }
 
-.SeeHead {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: 100px;
-  top: 64px;
-}
-.SeeBody {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: 100px;
-  top: 64px;
-}
-.SeeHat {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: 100px;
-  top: 70px;
+
+/* ============= MediaQuary =================*/
+
+/* @media screen and (max-width:390px){
+  .AvatarCheck {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: calc(50% - 250px / 2);
+    top: 29px;
+  
+    background: #ffe9ea;
+    border-radius: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    top: 50px;
+
+  }
+
+  .Next{
+    left: 250px;
+    top: 800px;
+  }
+
+} */
+
+@media ( max-width: 390px ) and ( max-height: 844px ) {
+  
+  .AvatarCheck {
+    top: 50px;
+  }
+
+  .Next{
+    left: 250px;
+    top: 800px;
+
+    top: 785px;
+  }
+
+  .SeeHead{
+    top:45px;
+  }
+
+  .PickHead{
+    top:330px;
+  }
+
+  .Head{
+    top:10px;
+  }
+
+  .HeadRight{
+    top: 0;
+  }
+
+  .HeadLeft{
+    top: 0;
+  }
+
+  .SeeBody{
+    top: 45px;
+  }
+
+  .PickBody{
+    top: 446px;
+  }
+
+  .Body{
+    top: 10px;
+    top: 0px;
+    top: -1px;
+  }
+
+  .BodyRight{
+    top: 0;
+  }
+
+  .BodyLeft{
+    top: 0px;
+  }
+
+  .SeeClothes{
+    top: 45px;
+  }
+  .PickClothes{
+    top: 562px;
+  }
+  .Clothes{
+    top: -5px;
+    top: -25px;
+    top: -27px;
+    top: -27.5px;
+  }
+  .ClothesRight{
+    top: 0px;
+  }
+  .ClothesLeft{
+    top: 0px;
+  }
+
+  .SeeHat{
+    top: 45px;
+  }
+  .PickHat{
+    top: 678px;
+  }
+  .Hat{
+    top: 25px;
+    top: 0px;
+
+    top: 10px;
+  }
+  .HatRight{
+    top: 0px;
+  }
+  .HatLeft{
+    top: 0px;
+  }
 }

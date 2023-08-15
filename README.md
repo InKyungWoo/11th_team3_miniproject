@@ -55,6 +55,16 @@
     </sub>
     </a>
     <br />
+    </td> <td align="center">
+    <a href="https://github.com/jiHeeFlee">
+    <img src="https://avatars.githubusercontent.com/u/126383608?v=4" width="150px;" alt="지희"/>
+    <br />
+    <sub>
+    <b>JiHee Ryu</b><br>
+    <b>🔫 Front-End</b>
+    </sub>
+    </a>
+    <br />
     </td>
   </tr>
 </table>

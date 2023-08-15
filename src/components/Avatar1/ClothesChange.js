@@ -44,31 +44,36 @@ const ClothesChange = () => {
   ];
   return (
     <div className="slider">
-      <img
-        className="SeeBody "
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
-      <div className="PickClothes"></div>
-      <img
-        className="Clothes"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
+      <div className="AvatarCheck" style={{ zIndex: 1 }}>
+        <img
+          className="SeeClothes "
+          src={images[currentIndex]}
+          alt={`Image ${currentIndex + 1}`}
+        />
+      </div>
 
-      <div>
-        <img
-          onClick={handleNext}
-          src={RightGreen}
-          className="ClothesRight"
-          alt="오른쪽버튼"
-        />
-        <img
-          onClick={handlePrevious}
-          src={LeftGreen}
-          className="ClothesLeft"
-          alt="왼쪽버튼"
-        />
+      <div className="DivPickClothes">
+        <div className="PickClothes" style={{ zIndex: 2 }}>
+          <img
+            className="Clothes"
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
+          />
+          <div>
+            <img
+              onClick={handleNext}
+              src={RightGreen}
+              className="ClothesRight"
+              alt="오른쪽버튼"
+            />
+            <img
+              onClick={handlePrevious}
+              src={LeftGreen}
+              className="ClothesLeft"
+              alt="왼쪽버튼"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

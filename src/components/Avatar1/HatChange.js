@@ -53,36 +53,50 @@ const HatChange = () => {
 
   return (
     <div className="slider">
-      <img
-        className="SeeHat"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
-      <div className="PickHat"></div>
-      <img
-        className="Hat"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
-      <div>
+      {/* <div className="Avatarcheck">
         <img
-          onClick={handleNext}
-          src={RightRed}
-          className="HatRight "
-          alt="오른쪽버튼"
+          className="SeeHat"
+          src={images[currentIndex]}
+          alt={`Image ${currentIndex + 1}`}
         />
+      </div> */}
+      <div className="AvatarCheck" style={{ zIndex: 1 }}>
         <img
-          onClick={handlePrevious}
-          src={LeftRed}
-          className="HatLeft "
-          alt="왼쪽버튼"
+            className="SeeHat"
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
         />
-        <img
-          onClick={handleSaveImage}
-          src={NextButton}
-          className="Next"
-          alt="다음"
-        />
+       </div>
+
+      <div className="DivPickHat">
+        <div className="PickHat" style={{ zIndex: 2 }}>
+          <img
+            className="Hat"
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
+          />
+
+          <div>
+            <img
+              onClick={handleNext}
+              src={RightRed}
+              className="HatRight "
+              alt="오른쪽버튼"
+            />
+            <img
+              onClick={handlePrevious}
+              src={LeftRed}
+              className="HatLeft "
+              alt="왼쪽버튼"
+            />
+          </div>
+          {/* <img
+            onClick={}
+            src={NextButton}
+            className="Next"
+            alt="다음"/> */}
+        </div>
+
       </div>
     </div>
   );
