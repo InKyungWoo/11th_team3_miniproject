@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "src/style/Home/Home.css";
-import title from "src/assets/images/ThisIsForYou.png";
-import cake from "src/assets/images/home_cake.png";
-import login from "src/assets/images/loginButton.png";
+
+// import title from "src/assets/images/ThisIsForYou.png";
+import title from "src/assets/images/HomeTitle.png";
+// import cake from "src/assets/images/home_cake.png";
+import cake from "src/assets/images/HomeCake.png";
+// import login from "src/assets/images/loginButton.png";
+import login from "src/assets/images/button_login.png";
+
 import confetti from "canvas-confetti";
 
 function Home() {

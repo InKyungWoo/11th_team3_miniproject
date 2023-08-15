@@ -30,32 +30,51 @@ const BodyChange = () => {
 
   return (
     <div className="slider">
-      <img
-        className="SeeBody"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
-      <div className="PickBody"></div>
-      <img
-        className="Body"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
 
-      <div>
+      <div className="AvatarCheck" style={{ zIndex: 1 }}>
+        {/* 1. 스냅샷에서 보이는 바디 */}
         <img
-          onClick={handleNext}
-          src={RightRed}
-          className="BodyRight "
-          alt="오른쪽버튼"
+          className="SeeBody"
+          src={images[currentIndex]}
+          alt={`Image ${currentIndex + 1}`}
         />
-        <img
-          onClick={handlePrevious}
-          src={LeftRed}
-          className="BodyLeft"
-          alt="왼쪽버튼"
-        />
+
+        <div className="AvatarBackground"></div>
       </div>
+
+      <div className="DivPickBody">
+      {/* 2. 선택창 백그라운드 + 선택한 몸몸 */}
+        <div className="PickBody" style={{ zIndex: 2 }}>
+          {/* 3. 선택창 안 몸 부분 */}
+          <img
+            className="Body"
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
+          />
+
+          {/* 4. 화살표 div */}
+          <div>
+            {/* 4-1.오른쪽 버튼 */}
+            <img
+              onClick={handleNext}
+              src={RightRed}
+              className="BodyRight "
+              alt="오른쪽버튼"
+            />
+
+            {/* 4-2.왼쪽 버튼 */}
+            <img
+              onClick={handlePrevious}
+              src={LeftRed}
+              className="BodyLeft"
+              alt="왼쪽버튼"
+            />
+          </div>
+
+        </div>
+        
+      </div>
+
     </div>
   );
 };

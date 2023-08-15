@@ -42,45 +42,53 @@ const HeadChange = () => {
     Rabbit,
     Raccoon,
   ];
+
+  // =============== 여기가 안풀리는 중 =======================
   const handleSaveImage = () => {
     const selectedImage = images[currentIndex];
     // Save the selectedImage data to localStorage or perform any other desired action
     console.log("Image saved:", selectedImage);
   };
 
+  // ===========================================================
+
+
   return (
     <div className="slider">
-      <img
-        className="SeeHead"
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-      />
-      <div className="PickHead">
+      <div className="AvatarCheck" style={{ zIndex: 1 }}>
+        {/* 1. 스냅샷 */}
         <img
-          className="Head"
+          className="SeeHead"
           src={images[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
         />
+        <div className="AvatarBackground"></div>
       </div>
-      <div>
-        <img
-          onClick={handleNext}
-          src={RightGreen}
-          className="HeadRight "
-          alt="오른쪽버튼"
-        />
-        <img
-          onClick={handlePrevious}
-          src={LeftGreen}
-          className="HeadLeft"
-          alt="왼쪽버튼"
-        />
-        <img
-          onClick={handleSaveImage}
-          src={NextButton}
-          className="Next"
-          alt="다음"
-        />
+
+      <div className="DivPickHead">
+        <div className="PickHead" style={{ zIndex: 2 }}>
+          <img
+            className="Head"
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
+          />
+          <div className="BackgroundPickHead"></div>
+
+          <div>
+            <img
+              onClick={handleNext}
+              src={RightGreen}
+              className="HeadRight "
+              alt="오른쪽버튼"
+            />
+            <img
+              onClick={handlePrevious}
+              src={LeftGreen}
+              className="HeadLeft"
+              alt="왼쪽버튼"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
