@@ -50,6 +50,7 @@ function AftLogin() {
   };
 
   return (
+    
     <div className="Background">
       <img src={title} className="title" alt="타이틀" />
       <img
@@ -98,6 +99,7 @@ function AftLogin() {
         </div>
       )}
     </div>
+    
   );
 }
 
